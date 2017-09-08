@@ -4,15 +4,16 @@
  * @flow
  */
 
-import * as React from 'react';
+import * as React from 'react'
+import { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
 
-export default class MyAwesomeProject extends React.Component<object, object> {
+export default class MyAwesomeProject extends Component {
   render() {
     return (
       <View style={styles.container}>
@@ -27,7 +28,7 @@ export default class MyAwesomeProject extends React.Component<object, object> {
           Cmd+D or shake for dev menu
         </Text>
       </View>
-    );
+    )
   }
 }
 
@@ -36,18 +37,18 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#F5FCFF'
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 10
   },
   instructions: {
     textAlign: 'center',
     color: '#333333',
-    marginBottom: 5,
-  },
-});
+    marginBottom: 5
+  }
+})
 
-AppRegistry.registerComponent('MyAwesomeProject', () => MyAwesomeProject);
+AppRegistry.registerComponent('MyAwesomeProject', () => MyAwesomeProject)
