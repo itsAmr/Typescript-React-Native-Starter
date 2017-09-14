@@ -27,12 +27,8 @@ RUN apt-get clean && \
 RUN npm install
 
 # Create the src & dist directory. Point src to local folder when running container with -v $(pwd)/src:/usr/app/src.
-RUN mkdir lib && \
+RUN mkdir build && \
     mkdir src
 
-# Default react-native web server port
+# Default react-native web server port.
 EXPOSE 8081
-
-# CMD ["react-native", "run-android"]
-
-

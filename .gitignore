@@ -54,7 +54,7 @@ fastlane/screenshots
 
 # TypeScript
 #
-lib/
+build/
 
 # Jest
 #

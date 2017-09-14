@@ -5,5 +5,5 @@ coverage
 .jest/
 .dockerignore
 Dockerfile
-lib/
+build/
 src/
