@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "test": "jest --coverage",
-    "clean": "rimraf lib",
+    "clean": "rimraf build",
     "build": "npm run clean && tsc",
     "lint": "tslint src/**/*.ts && tslint src/**/*.tsx --force"
   },
@@ -47,7 +47,7 @@
     "testPathIgnorePatterns": [
       "\\.snap$",
       "<rootDir>/node_modules/",
-      "<rootDir>/lib/"
+      "<rootDir>/build/"
     ],
     "cacheDirectory": ".jest/cache",
     "coverageDirectory": "coverage",
